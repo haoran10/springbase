@@ -14,3 +14,4 @@ hs_err_pid*
 springbase-web/target/
 .settings/
 springbase-web/.classpath
+.metadata/

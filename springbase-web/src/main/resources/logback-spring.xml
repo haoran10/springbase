@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	
+	<appender name="default" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/home/admin/springbase/logs/springbase.log</file>
+		<encoder>
+			<pattern>%date %level [%class{0}] %message%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>/home/admin/springbase/logs/springbase.log.%d</fileNamePattern>
+			<maxHistory>14</maxHistory>
+		</rollingPolicy>
+	</appender>
+	
+	<logger name="org.springframework.web" level="INFO">
+		<appender-ref ref="default" />
+	</logger>
+	
+	<root level="INFO">
+		<appender-ref ref="default" />
+	</root>
+</configuration>

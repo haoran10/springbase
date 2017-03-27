@@ -7,7 +7,10 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
 @EnableWebMvc
-@ComponentScan("wang.conge.springbase.controller")
+@ComponentScan({
+	"wang.conge.springbase.controller",
+	"wang.conge.springbase.service"
+})
 public class AppApplication {
 
 	public static void main(String[] args) {

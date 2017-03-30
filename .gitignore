@@ -16,3 +16,6 @@ springbase-web/target/
 springbase-web/.classpath
 .metadata/
 .recommenders/
+.idea/
+springbase-parent.iml
+springbase-web/springbase-web.iml

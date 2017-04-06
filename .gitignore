@@ -19,3 +19,4 @@ springbase-web/.classpath
 .idea/
 springbase-parent.iml
 springbase-web/springbase-web.iml
+springbase-util/.classpath

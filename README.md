@@ -18,3 +18,6 @@ public class DemoLogService {
 
 # lombok
 - 减少代码
+
+# Bean copy
+- 基于cglib BeanCopier 的bean 属性拷贝，性能优于dozer,Apache BeanUtil,spring BeanUtil
